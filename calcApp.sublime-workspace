@@ -1,0 +1,1086 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"bower",
+				"bower_components"
+			],
+			[
+				"co",
+				"collection"
+			],
+			[
+				"Pic",
+				"PicTemplate"
+			],
+			[
+				"setQueu",
+				"setQueueItemPic"
+			],
+			[
+				"tagQueue",
+				"TagQueueListView"
+			],
+			[
+				"tag",
+				"TagListView"
+			],
+			[
+				"header",
+				"headerHandlers"
+			],
+			[
+				"Cate",
+				"CategoryTemplate"
+			],
+			[
+				"Tag",
+				"TagCollection"
+			],
+			[
+				"sr",
+				"script"
+			],
+			[
+				"cu",
+				"curatedTags"
+			],
+			[
+				"current",
+				"currentTarget"
+			],
+			[
+				"bg",
+				"bg-pic"
+			],
+			[
+				"data",
+				"data-url"
+			],
+			[
+				"prot",
+				"protocol"
+			],
+			[
+				"re",
+				"result"
+			],
+			[
+				"str",
+				"strArray"
+			],
+			[
+				"has",
+				"hasPic"
+			],
+			[
+				"border",
+				"border-color"
+			],
+			[
+				"tags",
+				"tagsOrText"
+			],
+			[
+				"sort",
+				"sortOrder"
+			],
+			[
+				"int",
+				"INTERESTINGNESS_DESC"
+			],
+			[
+				"in",
+				"INTERESTINGNESS_DESC"
+			],
+			[
+				"cur",
+				"curated-tags"
+			],
+			[
+				"slide",
+				"slide-controls"
+			],
+			[
+				"searc",
+				"search-term"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"flickr",
+				"flickr-search"
+			],
+			[
+				"add",
+				"addClass"
+			],
+			[
+				"at",
+				"attributes"
+			],
+			[
+				"n",
+				"newSearch"
+			],
+			[
+				"el",
+				"else"
+			],
+			[
+				"tagmatrix",
+				"tagmatrixbg"
+			],
+			[
+				"num",
+				"numReloads"
+			],
+			[
+				"curr",
+				"currentTarget"
+			],
+			[
+				"li",
+				"list-style"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"own",
+				"owner_name"
+			],
+			[
+				"pi",
+				"picURL"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"ma",
+				"max-height"
+			],
+			[
+				"sc",
+				"screenHeight"
+			],
+			[
+				"get",
+				"getFavoritedTag"
+			],
+			[
+				"b",
+				"background-size"
+			],
+			[
+				"cat",
+				"categoryExpander"
+			],
+			[
+				"cate",
+				"category-expander"
+			],
+			[
+				"slideshow",
+				"slideshow-button"
+			],
+			[
+				"te",
+				"text-transform"
+			],
+			[
+				"t",
+				"text-transform"
+			],
+			[
+				"c",
+				"comparator"
+			],
+			[
+				"thu",
+				"thumbClick"
+			],
+			[
+				"sl",
+				"slideIndex"
+			],
+			[
+				"pic",
+				"picView"
+			],
+			[
+				"fu",
+				"fullSizePic"
+			],
+			[
+				"background",
+				"background-attachment"
+			],
+			[
+				"back",
+				"background-position"
+			],
+			[
+				"menu",
+				"menu-leftnav"
+			],
+			[
+				"live",
+				"live-link"
+			],
+			[
+				"ho",
+				"hor-gallery"
+			],
+			[
+				"p",
+				"page-listing"
+			],
+			[
+				"margin-",
+				"margin-bottom"
+			],
+			[
+				"font-",
+				"font-size"
+			],
+			[
+				"d",
+				"display"
+			],
+			[
+				"nav",
+				"navbar"
+			],
+			[
+				"fo",
+				"font-size"
+			],
+			[
+				"ba",
+				"background-size"
+			],
+			[
+				"this",
+				"thisPos"
+			],
+			[
+				"Scroll",
+				"scrollTop"
+			],
+			[
+				"top",
+				"topFactor"
+			],
+			[
+				"min-",
+				"min-height"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"rgb",
+				"rgba()"
+			],
+			[
+				"men",
+				"menuAirshipLeft"
+			],
+			[
+				"scroll",
+				"scrollTop"
+			],
+			[
+				"s",
+				"scrollTop"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/index.html",
+			"settings":
+			{
+				"buffer_size": 3648,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/bower_components/backbone/bower.json",
+			"settings":
+			{
+				"buffer_size": 261,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/styles/main.scss",
+			"settings":
+			{
+				"buffer_size": 2013,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/scripts/main.js",
+			"settings":
+			{
+				"buffer_size": 1115,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/egrotke/Sites/TagMatrix/public/js/backup/fullApp.js",
+			"settings":
+			{
+				"buffer_size": 49389,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/egrotke/Sites/TagMatrix/public/js/templates/tagListTemplate.html",
+			"settings":
+			{
+				"buffer_size": 1643,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/egrotke/Sites/TagMatrix/public/js/models/tagModel.js",
+			"settings":
+			{
+				"buffer_size": 1008,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/egrotke/Sites/TagMatrix/public/js/models/picModel.js",
+			"settings":
+			{
+				"buffer_size": 252,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/bower_components/backbone/backbone.js",
+			"settings":
+			{
+				"buffer_size": 60997,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"",
+				"Format: Javascript"
+			]
+		],
+		"width": 476.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/egrotke/calcApp/app",
+		"/Users/egrotke/calcApp/app/bower_components",
+		"/Users/egrotke/calcApp/app/bower_components/backbone",
+		"/Users/egrotke/calcApp/app/scripts"
+	],
+	"file_history":
+	[
+		"/Users/egrotke/Sites/TagMatrix/public/js/collections/picCollection.js",
+		"/Users/egrotke/Sites/TagMatrix/public/js/views/picListView.js",
+		"/Users/egrotke/Sites/TagMatrix/public/js/templates/picTemplate.html",
+		"/Users/egrotke/Sites/TagMatrix/public/js/templates/tagListTemplate.html",
+		"/Users/egrotke/Sites/TagMatrix/public/js/templates/tagListItemTemplate.html",
+		"/Users/egrotke/Sites/app/index.html",
+		"/Users/egrotke/Sites/TagMatrix/public/js/views/tagListView.js",
+		"/Users/egrotke/Sites/TagMatrix/public/js/headerHandlers.js",
+		"/Users/egrotke/Sites/TagMatrix/public/js/views/recommendedListView.js",
+		"/Users/egrotke/Sites/TagMatrix/public/js/collections/recommendedTagCollection.js",
+		"/Users/egrotke/Sites/TagMatrix/public/js/json/recommendedSeedData.json",
+		"/Users/egrotke/Sites/TagMatrix/public/index.html",
+		"/Users/egrotke/Sites/TagMatrix/public/js/models/tagModel.js",
+		"/Users/egrotke/Sites/TagMatrix/public/js/views/tagListItemView.js",
+		"/Users/egrotke/Sites/TagMatrix/public/js/main.js",
+		"/Users/egrotke/Sites/TagMatrix/public/js/router.js",
+		"/Users/egrotke/Sites/TagMatrix/public/js/fullApp.js",
+		"/Users/egrotke/Sites/TagMatrix/public/js/templates/recommendedListTemplate.html",
+		"/Users/egrotke/Sites/TagMatrix/public/js/views/tagQueueListView.js",
+		"/Users/egrotke/Sites/TagMatrix/public/css/styles.css",
+		"/Users/egrotke/Sites/TagMatrix/public/js/json/seedData.json",
+		"/Users/egrotke/Sites/TagMatrix/public/js/templates/slideshowTemplate.html",
+		"/Users/egrotke/Sites/TagMatrix/public/js/app.js",
+		"/Users/egrotke/Sites/TagMatrix/public/js/functions.js",
+		"/Users/egrotke/Sites/TagMatrix/public/js/TM_Globals.js",
+		"/Users/egrotke/Sites/TagMatrix/public/js/collections/categoryCollection.js",
+		"/Users/egrotke/Sites/TagMatrix/public/js/templates/tagQueueListTemplate.html",
+		"/Users/egrotke/Sites/TagMatrix/public/js/models/picModel.js",
+		"/Users/egrotke/Sites/TagMatrix/public/js/collections/TagCollection.js",
+		"/Users/egrotke/Sites/TagMatrix/public/js/views/categoryView.js",
+		"/Users/egrotke/Sites/TagMatrix/public/js/views/picView.js",
+		"/Users/egrotke/Sites/TagMatrix/public/js/templates/categoryTemplate.html",
+		"/Users/egrotke/Sites/TagMatrix/public/js/models/CategoryModel.js",
+		"/Users/egrotke/Sites/TagMatrix/public/js/seedData.js",
+		"/Users/egrotke/Sites/TagMatrix/public/js/seedCategories.json",
+		"/Users/egrotke/Sites/TagMatrix/public/js/collections/CategoryCollection.js",
+		"/Users/egrotke/Sites/TagMatrix/public/js/seedData.json",
+		"/Users/egrotke/Sites/TagMatrix/routes/tags.js",
+		"/Users/egrotke/Sites/TagMatrix/public/js/mainFull.js",
+		"/Users/egrotke/Sites/node/httpGet.js",
+		"/Users/egrotke/Sites/TagMatrix/server.js",
+		"/Users/egrotke/Sites/TagMatrix/public/js/utils.js",
+		"/Users/egrotke/Sites/models/TagModel.js",
+		"/Users/egrotke/Sites/TagMatrix/public/js/views/tagView.js",
+		"/Users/egrotke/Sites/TagMatrix/public/js/mainfull.js",
+		"/Users/egrotke/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/egrotke/Sites/TagMatrix/routes/pics.js",
+		"/Applications/MAMP/htdocs/tagmatrix/flickrSearch.php",
+		"/Users/egrotke/Sites/TagMatrix/routes/picshttp.js",
+		"/Users/egrotke/Sites/node/hcdb.js",
+		"/Users/egrotke/Sites/node/io.js",
+		"/Users/egrotke/Sites/node/mymodule.js",
+		"/Users/egrotke/Sites/node/modular.js",
+		"/Users/egrotke/Sites/node/get3.js",
+		"/Applications/MAMP/htdocs/tagmatrix/pics/index.php",
+		"/Applications/MAMP/htdocs/tagmatrix/css/styles.css",
+		"/Applications/MAMP/htdocs/tagmatrix/js/app.js",
+		"/Applications/MAMP/htdocs/tagmatrix/index.html",
+		"/Applications/MAMP/htdocs/tagmatrix/index.php",
+		"/Users/egrotke/Sites/TagMatrix/package.json",
+		"/Applications/MAMP/htdocs/tagmatrix/package.json",
+		"/Applications/MAMP/htdocs/tagmatrix/app.js",
+		"/Applications/MAMP/htdocs/tagmatrix/js/app_SimpleSearch.js",
+		"/Applications/MAMP/htdocs/l4api/app/controllers/UrlController.php",
+		"/Applications/MAMP/htdocs/RestAPI/app/database/migrations/2014_08_23_002203_create_urls_table.php",
+		"/Applications/MAMP/htdocs/RestAPI/app/database/seeds/UserTableSeeder.php",
+		"/Applications/MAMP/htdocs/tagmatrix/.htaccess",
+		"/Applications/MAMP/htdocs/RestAPI/app/database/seeds/tagTableSeeder.php",
+		"/Applications/MAMP/htdocs/tagmatrix/index2.html",
+		"/Applications/MAMP/htdocs/backbone-flickr/index.html",
+		"/Applications/MAMP/htdocs/backbone-flickr/js/app.js",
+		"/Applications/MAMP/htdocs/backbone-flickr/css/styles.css",
+		"/Applications/MAMP/htdocs/backbone-contacts/css/reset.css",
+		"/Applications/MAMP/htdocs/backbone-contacts/css/styles.css",
+		"/Applications/MAMP/htdocs/backbone-contacts/index.html",
+		"/Applications/MAMP/htdocs/backbone-contacts/js/app.js",
+		"/Applications/MAMP/htdocs/backbone-pubnub/app/index.html",
+		"/Applications/MAMP/htdocs/backbone-pubnub/app/styles/main.scss",
+		"/Applications/MAMP/htdocs/oldTimey/wp-content/themes/oldTimey2.0/footer.php",
+		"/Applications/MAMP/htdocs/oldTimey/wp-content/themes/oldTimey_bk/page-featured-sites.php",
+		"/Applications/MAMP/htdocs/oldTimey/wp-content/themes/oldTimey2.0/header.php",
+		"/Applications/MAMP/htdocs/oldTimey/wp-content/themes/oldTimey2.0/functions.php",
+		"/Applications/MAMP/htdocs/oldTimey/wp-content/themes/oldTimey2.0/css/font-awesome.css",
+		"/Applications/MAMP/htdocs/oldTimey/wp-content/themes/oldTimey2.0/js/flyDesign-tryagain.js",
+		"/Applications/MAMP/htdocs/oldTimey/wp-content/themes/oldTimey2.0/css/reset.css",
+		"/Applications/MAMP/htdocs/oldTimey/wp-content/themes/oldTimey2.0/css/ie.css",
+		"/Applications/MAMP/htdocs/oldTimey/wp-content/themes/oldTimey/header.php",
+		"/Applications/MAMP/htdocs/oldTimey/wp-content/themes/oldTimey/css/typography.css",
+		"/Applications/MAMP/htdocs/oldTimey/wp-content/themes/oldTimey/css/layout.css",
+		"/Applications/MAMP/htdocs/oldTimey/wp-content/themes/oldTimey/index.php",
+		"/Applications/MAMP/htdocs/oldTimey/wp-content/themes/oldTimey/page-bk.php",
+		"/Users/egrotke/Sites/physicsJS/scripts/behaviors/body-collision-detection.js",
+		"/Users/egrotke/Sites/physicsJS/scripts/main.js",
+		"/Users/egrotke/Sites/physicsJS/css/bouncy.css",
+		"/Users/egrotke/Sites/physicsJS/index.html",
+		"/Users/egrotke/Sites/VicSecretsNew/wp-includes/plugin.php"
+	],
+	"find":
+	{
+		"height": 37.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"Key",
+			"egrotke_vps963@ericgrotke.com",
+			"var express = require('express')",
+			"json",
+			"recommended",
+			"related-tags-template",
+			"tagView",
+			"urlRoot",
+			"tags",
+			"farm",
+			"tagListItemView",
+			"search-query",
+			"search",
+			"TM.page",
+			"slideIndex ",
+			"initSlideshow",
+			"numSlides",
+			"thumbHover",
+			"CategoryTemplate",
+			"categoryRating",
+			"tagListView",
+			"addToTagQueue",
+			"#tag-que",
+			"addToTag",
+			"playPauseClick",
+			"\"likes\": 1",
+			"console",
+			"startSlideshow",
+			"sortBy",
+			"render",
+			"scrollto",
+			"set",
+			"tagQueue",
+			"slideIndex",
+			"startSlideshow",
+			"render",
+			"tagQueue",
+			"picListView",
+			"newSearch",
+			"tagsArray",
+			"startSlideshow",
+			"tagQueueCollection",
+			"tagQueue",
+			"curatedTags",
+			"#pics",
+			"headerHandlers",
+			"getRa",
+			"initHeaderHandlers",
+			"getRandomTag",
+			"loadFavoritedTag",
+			"curatedTagView",
+			"tagView",
+			"slideshowInterval",
+			"picListView",
+			"headerClick",
+			"newSearch",
+			"picCollection",
+			"scrollTo",
+			"tags",
+			"that.options.tagQueueView",
+			"tagCollection",
+			"curatedTags",
+			"TagCollection",
+			"categoryCollection",
+			"tagQueueView",
+			"scrollToBottom",
+			"TagQueueView",
+			"expanded",
+			"CategoryCollection",
+			"CategoryModel",
+			"TagCollection",
+			"TagModel",
+			"tagCollection",
+			"tagListTemplate",
+			"CategoryModel",
+			"categoryListTemplate",
+			"TagModel",
+			"TagCollection",
+			"CategoryModel",
+			"SeedData",
+			"categoryCollection",
+			"category",
+			"SeedData",
+			"seedData",
+			"curatedTagData",
+			"sortJSON",
+			"that.options.categories",
+			"this.options.categories",
+			"this.collection",
+			"text",
+			"tagQueue",
+			"CuratedTagView",
+			"bootstrapSwitch",
+			"expanded",
+			"change",
+			"loadFavoritedTag",
+			"data",
+			"addCategories",
+			"TM.",
+			"startSlideshow",
+			"TM.",
+			"TM",
+			"changeBackground",
+			"scrollingTimeout",
+			"css",
+			"click",
+			"tagQueueView",
+			"scrollToBottom",
+			"slideshowOn",
+			"loadFavoritedTag",
+			"picView",
+			"loadNewTag",
+			"curatedTagView",
+			"getRandomTag",
+			"currentSearch",
+			"reset",
+			"tagMatrix",
+			"currentSearch",
+			"slideshowInterval",
+			"scrollingTimeout",
+			"newSearch",
+			"numSlide",
+			"slideshowInterval",
+			"createTag",
+			"sortJSON",
+			"slideshowOn",
+			"previousSear",
+			"tagMode"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"KeyPad",
+			"tagQueue",
+			"tags",
+			"this.collection",
+			"categories",
+			"'category'",
+			"seedData",
+			"SeedData",
+			"seedData",
+			"categoryCollection",
+			"tagCollection",
+			"mouseup",
+			"curatedTags",
+			"tag",
+			"queued",
+			"tagQueueView",
+			"tagQueue",
+			"photos",
+			"picView.newSearch()",
+			"slideshow",
+			"hover-effect",
+			"SteelBlue",
+			"teal",
+			"#305a7c",
+			"FireBrick",
+			"RoyalBlue",
+			"SteelBlue",
+			"brown",
+			"saddlebrown",
+			"coral",
+			"brown",
+			"BBoneAuth",
+			"BBONE"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "/Users/egrotke/calcApp/app"
+		}
+	],
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3648,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1606,
+								1606
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/bower_components/backbone/bower.json",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 261,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/styles/main.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2013,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								541,
+								541
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/scripts/main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1115,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								492,
+								492
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 4.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/Users/egrotke/Sites/TagMatrix/public/js/backup/fullApp.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 49389,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								22730,
+								22756
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 13562.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/Users/egrotke/Sites/TagMatrix/public/js/templates/tagListTemplate.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1643,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/Users/egrotke/Sites/TagMatrix/public/js/models/tagModel.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1008,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/Users/egrotke/Sites/TagMatrix/public/js/models/picModel.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 252,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "app/bower_components/backbone/backbone.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 60997,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2044.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 29.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "",
+	"replace":
+	{
+		"height": 68.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 260.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
