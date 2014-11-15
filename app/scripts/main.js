@@ -30,13 +30,16 @@ var KeyPadView = Backbone.View.extend({
 		var input = e.target.innerHTML.trim();
 		if (jQuery.isNumeric(input) || input == '.') {
 			if (this.currentNum == 0) {
-				this.currentNum = input;
+				this.currentNum = Number(input);
 			} else {
 				this.currentNum += input;
+				this.currentNum = Number(this.currentNum);
 			}
 			$('#readout').html(this.currentNum);
-		} else if (input == '+' || input == '-' || input == 'x' || input == '/') {
+		} else if (input == '+' || input == '-' || input == 'x' || input == '/' ) {
 			this.doOperation(input);
+		} else if (input == '+/-') {
+			this.switchSign();
 		} else if (input == 'Enter') {
 			this.enterNum();
 		} else if (input == 'C') {
@@ -47,38 +50,48 @@ var KeyPadView = Backbone.View.extend({
 	},
 	doOperation: function(operator) {
 		var operand1, operand2;
-		if (Number(this.currentNum) != 0 && this.stack.length > 0) {
-			operand1 = Number(this.currentNum);
-			operand2 = Number(this.stack.pop());
+		if (this.currentNum != 0 && this.stack.length > 0) {
+			operand1 = this.currentNum;
+			operand2 = this.stack.pop();
 		} else if (this.stack.length > 1) {
-			operand1 = Number(this.stack.pop());
-			operand2 = Number(this.stack.pop());
+			operand1 = this.stack.pop();
+			operand2 = this.stack.pop();
 		} else {
 			return;
 		}
 		switch (operator) {
 			case '+':
 				console.log('Plus pressed');
-				this.result = operand1 + operand2;
+				this.result = operand2 + operand1;
 				break;
 			case '-':
 				console.log('Minus pressed');
-				this.result = operand1 - operand2;
+				this.result = operand2 - operand1;
 				break;
 			case 'x':
 				console.log('Times pressed');
-				this.result = operand1 * operand2;
+				this.result = operand2 * operand1;
 				break;
 			case '/':
 				console.log('Division pressed');
-				this.result = operand1 / operand2;
+				this.result = operand2 / operand1;
 				break;
-
 		}
 		this.stack.push(this.result);
-		$('#readout').html(String(this.result));
+		$('#readout').html(this.result);
 		this.currentNum = 0;
 		console.log(this.stack);
+	},
+	switchSign: function() {
+		console.log('+/- pressed');
+		if (this.currentNum != 0) {
+			this.currentNum *= -1;
+			$('#readout').html(this.currentNum);
+		} else {
+			this.stack[this.stack.length-1] *= -1;
+			$('#readout').html(this.stack[this.stack.length-1]);
+		}
+		
 	},
 	clearStack: function() {
 		console.log('Clear pressed');
@@ -93,8 +106,8 @@ var KeyPadView = Backbone.View.extend({
 	},
 	enterNum: function() {
 		console.log('Enter pressed: ' + this.currentNum);
-		if (Number(this.currentNum) != 0) {
-			this.stack.push(Number(this.currentNum.trim()));
+		if (this.currentNum != 0) {
+			this.stack.push(this.currentNum);
 			this.currentNum = 0;
 		}
 		console.log(this.stack);
@@ -130,11 +143,13 @@ var keyPads = new KeyPadCollection([{
 	}, {
 		value: '.'
 	}, {
-		value: 'CE'
+		value: '+/-'
 	}, {
 		value: '+'
 	}, {
 		value: 'C'
+	}, {
+		value: 'CE'
 	}, {
 		value: 'Enter'
 	}]),
