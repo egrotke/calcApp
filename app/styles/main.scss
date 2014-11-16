@@ -4,7 +4,21 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 // endbower
 
 $orange: #B44010;
+$darkOrange: #922010;
 
+
+@font-face {
+    font-family: 'LCD';
+    src: url('fonts/advanced_pixel_lcd-7-webfont.eot');
+    src: url('fonts/advanced_pixel_lcd-7-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/advanced_pixel_lcd-7-webfont.woff2') format('woff2'),
+         url('fonts/advanced_pixel_lcd-7-webfont.woff') format('woff'),
+         url('fonts/advanced_pixel_lcd-7-webfont.ttf') format('truetype'),
+         url('fonts/advanced_pixel_lcd-7-webfont.svg#advanced_pixel_lcd-7regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+//@include font-face("LCD", font-files("fonts/advanced_pixel_lcd-7-webfont.ttf", "fonts/advanced_pixel_lcd-7-webfont.otf", "fonts/advanced_pixel_lcd-7-webfont.woff", "fonts/advanced_pixel_lcd-7-webfont.woff2", "fonts/advanced_pixel_lcd-7-webfont.eot"));
 
 @mixin box-emboss($outerOpacity, $innerOpacity) {
   box-shadow:
@@ -46,9 +60,8 @@ $orange: #B44010;
   /*@include letterpress(.5);*/
 }
 
-.keyPad.doubleKey{
-  width:46%;
-}
+
+
 
 .browsehappy {
   margin: 0.2em 0;
@@ -93,7 +106,7 @@ body {
 /* Custom page footer */
 .footer {
   padding-top: 19px;
-  border-top: 1px solid #e5e5e5;
+  /*border-top: 1px solid #e5e5e5;*/
   text-align: right;
 }
 
@@ -104,7 +117,9 @@ body {
 
 /** Retro Theme */
 body.retro {
-  background:$orange;
+  background:#FEC34D;
+  color:black;
+  font-family: 'Andale Mono', AndaleMono, monospace;
 }
 
 .retro #calculator{
@@ -114,14 +129,28 @@ body.retro {
 
 .retro #readout{
   background: #ddd;
+  font-family: 'LCD';
+  padding:2%;
+  font-size:1.4em;
+  width:92%;
 }
 .retro .keyPad{
-  @include button-variant(#121212, #FEC34D, #FF9F00);
+  width:20%;
+  font-size: 1.5em;
+  font-weight:100;
+  margin:1%;
+  @include button-variant(white, $orange, $darkOrange);
 }
 .retro .keyPad:hover{
   background:#FF2B00;
 }
+.retro .keyPad.doubleKey{
+  width:44%;
+}
 
+.keyPad.doubleKey{
+  width:46%;
+}
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   body{

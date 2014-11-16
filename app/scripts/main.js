@@ -28,6 +28,8 @@ var KeyPadView = Backbone.View.extend({
 	},
 	keyPadClick: function(e) {
 		var input = e.target.innerHTML.trim();
+
+		console.log(input);
 		if (jQuery.isNumeric(input) || input == '.') {
 			if (this.currentNum == 0) {
 				this.currentNum = Number(input);
@@ -36,9 +38,9 @@ var KeyPadView = Backbone.View.extend({
 				this.currentNum = Number(this.currentNum);
 			}
 			$('#readout').html(this.currentNum);
-		} else if (input == '+' || input == '-' || input == 'x' || input == '/') {
+		} else if (input == '+' || input == '−' || input == '×' || input == '÷') {
 			this.doOperation(input);
-		} else if (input == '+/-') {
+		} else if (input == '±') {
 			this.switchSign();
 		} else if (input == 'Enter') {
 			this.enterNum();
@@ -64,15 +66,15 @@ var KeyPadView = Backbone.View.extend({
 				console.log('Plus pressed');
 				this.result = operand2 + operand1;
 				break;
-			case '-':
+			case '−':
 				console.log('Minus pressed');
 				this.result = operand2 - operand1;
 				break;
-			case 'x':
+			case '×':
 				console.log('Times pressed');
 				this.result = operand2 * operand1;
 				break;
-			case '/':
+			case '÷':
 				console.log('Division pressed');
 				this.result = operand2 / operand1;
 				break;
@@ -121,7 +123,7 @@ var keyPads = new KeyPadCollection([{
 	}, {
 		value: '9'
 	}, {
-		value: '/'
+		value: '&divide'
 	}, {
 		value: '4'
 	}, {
@@ -129,7 +131,7 @@ var keyPads = new KeyPadCollection([{
 	}, {
 		value: '6'
 	}, {
-		value: 'x'
+		value: '&times'
 	}, {
 		value: '1'
 	}, {
@@ -137,13 +139,13 @@ var keyPads = new KeyPadCollection([{
 	}, {
 		value: '3'
 	}, {
-		value: '-'
+		value: '&#8722'
 	}, {
 		value: '0'
 	}, {
 		value: '.'
 	}, {
-		value: '+/-'
+		value: '&#xB1'
 	}, {
 		value: '+'
 	}, {
@@ -159,6 +161,21 @@ var keyPads = new KeyPadCollection([{
 		collection: keyPads,
 		el: $('#calculator'),
 	});
-var d = new Date();
-var thisYear = d.getFullYear();
-document.getElementById("copyDate").innerHTML = thisYear;
+
+
+function buttonHandlers() {
+
+	$('#modern-theme').click(function() {
+		$("body").removeClass( "retro" ).addClass('modern');
+	});
+	$('#retro-theme').click(function() {
+		$("body").removeClass( "modern" ).addClass('retro');
+	});
+	var d = new Date();
+	var thisYear = d.getFullYear();
+	document.getElementById("copyDate").innerHTML = thisYear;
+
+}
+
+
+buttonHandlers();
