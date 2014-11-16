@@ -22,29 +22,29 @@
     <script type="text/template" id="key-pad-template">          
     <div id="readout">0</div>
     <% keyPads.each(function(keyPad, index) {  %>                    
-      <button type="button" class="btn btn-xs btn-info keyPad"  > <%= keyPad.get('value') %></button>
+      <button type="button" class="btn btn-xs btn-info keyPad <%= keyPad.get('width') %>"  > <%= keyPad.get('value') %></button>
       <% }); %>
     </script>
 
 
   </head>
-  <body>
-    <!--[if lt IE 10]>
+  <body class="retro">
+    <!--[if lt IE 9]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
 
     <div class="container">
       <div class="header">
-        <h3>calcApp</h3>
+        <h2>calcApp</h2>
       </div>
 
-      <div id="calculator" class="col-md-3 col-sm-6 col-xs-12">        
+      <div id="calculator" class="col-md-4 col-sm-6 col-xs-12">        
       </div>
       <div class="clearfix"></div>
 
       <div class="footer">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Endgame team</p>
+        <p>&copy; egrotke <span id="copyDate"></span></p>
       </div>
 
     </div>

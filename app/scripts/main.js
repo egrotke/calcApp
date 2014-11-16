@@ -36,7 +36,7 @@ var KeyPadView = Backbone.View.extend({
 				this.currentNum = Number(this.currentNum);
 			}
 			$('#readout').html(this.currentNum);
-		} else if (input == '+' || input == '-' || input == 'x' || input == '/' ) {
+		} else if (input == '+' || input == '-' || input == 'x' || input == '/') {
 			this.doOperation(input);
 		} else if (input == '+/-') {
 			this.switchSign();
@@ -88,10 +88,10 @@ var KeyPadView = Backbone.View.extend({
 			this.currentNum *= -1;
 			$('#readout').html(this.currentNum);
 		} else {
-			this.stack[this.stack.length-1] *= -1;
-			$('#readout').html(this.stack[this.stack.length-1]);
+			this.stack[this.stack.length - 1] *= -1;
+			$('#readout').html(this.stack[this.stack.length - 1]);
 		}
-		
+
 	},
 	clearStack: function() {
 		console.log('Clear pressed');
@@ -151,10 +151,14 @@ var keyPads = new KeyPadCollection([{
 	}, {
 		value: 'CE'
 	}, {
-		value: 'Enter'
+		value: 'Enter',
+		width: 'doubleKey'
 	}]),
 	keyPadView = new KeyPadView({
 		model: new KeyPad(),
 		collection: keyPads,
 		el: $('#calculator'),
 	});
+var d = new Date();
+var thisYear = d.getFullYear();
+document.getElementById("copyDate").innerHTML = thisYear;

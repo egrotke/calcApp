@@ -3,33 +3,52 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
+$orange: #B44010;
+
+
+@mixin box-emboss($outerOpacity, $innerOpacity) {
+  box-shadow:
+    rgba(white, $outerOpacity) 1px 1.5px 1px, 
+    rgba(black, $innerOpacity) 1px 1.5px 1px inset;
+}
+
+
 #calculator{
-  background:#999;
+  background:#ccc;
   border-radius:10px;
   display:block;
   margin:30px auto 30px auto;
   position:relative;
   padding:2%;
   width:auto;
+  text-align:center;
+  @include box-shadow(#444 2px 2px 2px);
+
 }
 #readout{
   text-align:right;
   font-size: 2em;
-  width:97%;
+  width:95%;
   background: white;
   color:#444;
   display:block;
-  margin:1%;
+  margin:1% auto;
   position:relative;
   padding:0 3%;
+  @include box-emboss(0.3, 0.6);
 }
 
 .keyPad{
-  width:22%;
+  width:21.5%;
   font-size: 1.5em;
   margin:1%;
+  font-weight:bold;
+  /*@include letterpress(.5);*/
 }
 
+.keyPad.doubleKey{
+  width:46%;
+}
 
 .browsehappy {
   margin: 0.2em 0;
@@ -38,11 +57,14 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
   padding: 0.2em 0;
 }
 
+
+
+
+
 /* Space out content a bit */
 body {
   padding-top: 20px;
   padding-bottom: 20px;
-  font-size: 2.5vw;
   background:teal;
   color:white;
 }
@@ -60,7 +82,7 @@ body {
   border-bottom: 1px solid #e5e5e5;
 
   /* Make the masthead heading the same height as the navigation */
-  h3 {
+  h2 {
     margin-top: 0;
     margin-bottom: 0;
     line-height: 40px;
@@ -72,32 +94,39 @@ body {
 .footer {
   padding-top: 19px;
   border-top: 1px solid #e5e5e5;
+  text-align: right;
 }
 
 .container-narrow > hr {
   margin: 30px 0;
 }
 
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-  .btn {
-    font-size: 21px;
-    padding: 14px 24px;
-  }
+
+/** Retro Theme */
+body.retro {
+  background:$orange;
 }
 
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-  p + h4 {
-    margin-top: 28px;
-  }
+.retro #calculator{
+  background:#222;
+  @include box-shadow(#111 2px 2px 2px);
+}
+
+.retro #readout{
+  background: #ddd;
+}
+.retro .keyPad{
+  @include button-variant(#121212, #FEC34D, #FF9F00);
+}
+.retro .keyPad:hover{
+  background:#FF2B00;
 }
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
+  body{
+    font-size: 2.5vw;
+  }
   .container {
     max-width: 730px;
   }
@@ -108,15 +137,5 @@ body {
   .footer {
     padding-left: 0;
     padding-right: 0;
-  }
-
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
   }
 }
