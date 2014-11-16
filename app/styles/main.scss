@@ -3,8 +3,8 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
-$orange: #B44010;
-$darkOrange: #922010;
+$orange: #E15E32;
+$lightOrange: #f37f54;
 
 
 @font-face {
@@ -28,25 +28,37 @@ $darkOrange: #922010;
 
 
 #calculator{
-  background:#ccc;
-  border-radius:10px;
+  background:#dedede;
+  border-radius:15px;
   display:block;
-  margin:30px auto 30px auto;
+  margin:20px auto 20px auto;
   position:relative;
-  padding:2%;
-  width:auto;
+  padding:4% 2%;
+
   text-align:center;
   @include box-shadow(#444 2px 2px 2px);
 
 }
+#stack{
+  display:none;
+  margin:20px auto 20px auto;
+  padding:4% 2%;
+  text-align:center;
+}
+.stack-item{
+  margin:2px 50%;
+  font-size: 3em;
+}
 #readout{
   text-align:right;
+  overflow:hidden;
   font-size: 2em;
   width:95%;
+  min-height:20px;
   background: white;
   color:#444;
   display:block;
-  margin:1% auto;
+  margin:1% auto 2% auto;
   position:relative;
   padding:0 3%;
   @include box-emboss(0.3, 0.6);
@@ -55,9 +67,12 @@ $darkOrange: #922010;
 .keyPad{
   width:21.5%;
   font-size: 1.5em;
-  margin:1%;
+  margin:1.5% 1%;
   font-weight:bold;
-  /*@include letterpress(.5);*/
+  border-radius:30px;
+}
+.btn.keyPad:active, .btn.keyPad:focus{
+  outline:0;
 }
 
 
@@ -99,7 +114,7 @@ body {
     margin-top: 0;
     margin-bottom: 0;
     line-height: 40px;
-    padding-bottom: 19px;
+    padding-bottom: 10px;
   }
 }
 
@@ -128,7 +143,8 @@ body.retro {
 }
 
 .retro #readout{
-  background: #ddd;
+  background: #999;
+  color:#333;
   font-family: 'LCD';
   padding:2%;
   font-size:1.4em;
@@ -136,10 +152,15 @@ body.retro {
 }
 .retro .keyPad{
   width:20%;
-  font-size: 1.5em;
+  font-size: 1.7em;
   font-weight:100;
-  margin:1%;
-  @include button-variant(white, $orange, $darkOrange);
+  margin:1.5% 1%;
+  border-radius:10px;
+  @include button-variant(white, $orange, $lightOrange);
+  @include box-shadow(#902900 1px 2px 0px);
+}
+.btn-retro{
+  @include button-variant(white, $orange, $lightOrange);
 }
 .retro .keyPad:hover{
   background:#FF2B00;
@@ -147,6 +168,75 @@ body.retro {
 .retro .keyPad.doubleKey{
   width:44%;
 }
+
+ /* Metal ------------------------- */
+body.metal{
+  font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+  font-weight:100;
+}
+.metal #calculator{
+  border-radius:30px;
+ 
+ background-image: -webkit-repeating-linear-gradient(left, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0)   6%, hsla(0,0%,100%, .1) 7.5%),
+    -webkit-repeating-linear-gradient(left, hsla(0,0%,  0%,0) 0%, hsla(0,0%,  0%,0)   4%, hsla(0,0%,  0%,.03) 4.5%),
+    -webkit-repeating-linear-gradient(left, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0) 1.2%, hsla(0,0%,100%,.15) 2.2%),
+    
+    linear-gradient(180deg, hsl(0,0%,78%)  0%, 
+    hsl(0,0%,90%) 47%, 
+    hsl(0,0%,78%) 53%,
+    hsl(0,0%,70%)100%);
+}
+.metal .keyPad{
+ @include box-shadow(#024859 1px 2px 0px);
+}
+.metal .keyPad, .btn-metal{
+  @include button-variant(white, #157A8C, #21AD94);
+  font-weight:100;
+}
+
+/** Modern Theme */
+body.modern {
+  background:#F1A57B;
+  color:#000;
+}
+
+.modern #calculator{
+  background:#ede574;
+  border-radius:50px;
+  @include box-shadow(#111 2px 2px 2px);
+}
+
+.modern #readout{
+  background: #A8A39F;
+  color:#333;
+  font-family: 'LCD';
+  padding:2%;
+  font-size:1.4em;
+  width:92%;
+}
+.modern .keyPad{
+  width:20%;
+  font-size: 1.7em;
+  font-weight:100;
+  margin:1.5% 1%;
+  border-radius:50px;
+  @include box-shadow(#bb1920 1px 2px 0px);
+  @include button-variant(white, #ff4e50, #ff6f72);
+}
+.modern .keyPad:hover{
+  background:#dd2c30;
+}
+.modern .keyPad.doubleKey{
+  width:44%;
+}
+
+.btn-modern{
+  @include button-variant(white, #ff4e50, #ff6f72);
+}
+
+
+/** End Themes  */
+
 
 .keyPad.doubleKey{
   width:46%;
@@ -159,7 +249,9 @@ body.retro {
   .container {
     max-width: 730px;
   }
-
+#readout{
+  min-height:42px;
+}
   /* Remove the padding we set earlier */
   .header,
   .marketing,

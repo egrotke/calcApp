@@ -28,10 +28,10 @@ var KeyPadView = Backbone.View.extend({
 	},
 	keyPadClick: function(e) {
 		var input = e.target.innerHTML.trim();
-
-		console.log(input);
 		if (jQuery.isNumeric(input) || input == '.') {
-			if (this.currentNum == 0) {
+			if (input == '.') {
+				this.handleDecimal(input);
+			} else if (this.currentNum === 0) {
 				this.currentNum = Number(input);
 			} else {
 				this.currentNum += input;
@@ -50,6 +50,18 @@ var KeyPadView = Backbone.View.extend({
 			this.clearEntry();
 		}
 	},
+	handleDecimal: function(dot){
+		
+		numString = String(this.currentNum);
+		console.log('HD' + numString.indexOf('.'));
+		if(numString.indexOf('.') == -1){
+			if (this.currentNum == 0){
+				this.currentNum = '0.';
+			} else {
+				this.currentNum += '.';
+			}
+		}
+	},
 	doOperation: function(operator) {
 		var operand1, operand2;
 		if (this.currentNum != 0 && this.stack.length > 0) {
@@ -63,26 +75,22 @@ var KeyPadView = Backbone.View.extend({
 		}
 		switch (operator) {
 			case '+':
-				console.log('Plus pressed');
 				this.result = operand2 + operand1;
 				break;
 			case '−':
-				console.log('Minus pressed');
 				this.result = operand2 - operand1;
 				break;
 			case '×':
-				console.log('Times pressed');
 				this.result = operand2 * operand1;
 				break;
 			case '÷':
-				console.log('Division pressed');
 				this.result = operand2 / operand1;
 				break;
 		}
 		this.stack.push(this.result);
 		$('#readout').html(this.result);
 		this.currentNum = 0;
-		console.log(this.stack);
+		this.drawStack('operator');
 	},
 	switchSign: function() {
 		console.log('+/- pressed');
@@ -96,23 +104,30 @@ var KeyPadView = Backbone.View.extend({
 
 	},
 	clearStack: function() {
-		console.log('Clear pressed');
 		this.stack = [];
 		this.currentNum = 0;
 		$('#readout').html(this.currentNum);
+		this.drawStack('clear');
 	},
 	clearEntry: function() {
-		console.log('Clear Entry pressed');
 		this.currentNum = 0;
 		$('#readout').html(this.currentNum);
 	},
 	enterNum: function() {
-		console.log('Enter pressed: ' + this.currentNum);
 		if (this.currentNum != 0) {
 			this.stack.push(this.currentNum);
 			this.currentNum = 0;
 		}
+		this.drawStack('enter');
+	},
+	drawStack: function(action) {
 		console.log(this.stack);
+		$('#stack').empty();
+		this.stack.forEach(function(entry, index) {
+    		console.log(entry);
+    		$('#stack').append('<h3 class="stack-item">' + entry + '</h3>');
+		});
+		
 	}
 });
 
@@ -166,10 +181,13 @@ var keyPads = new KeyPadCollection([{
 function buttonHandlers() {
 
 	$('#modern-theme').click(function() {
-		$("body").removeClass( "retro" ).addClass('modern');
+		$("body").removeClass( "retro metal" ).addClass('modern');
 	});
 	$('#retro-theme').click(function() {
-		$("body").removeClass( "modern" ).addClass('retro');
+		$("body").removeClass( "modern metal" ).addClass('retro');
+	});
+	$('#metal-theme').click(function() {
+		$("body").removeClass( "modern retro" ).addClass('metal');
 	});
 	var d = new Date();
 	var thisYear = d.getFullYear();
