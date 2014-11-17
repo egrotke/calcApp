@@ -70,8 +70,8 @@ $lightOrange: #f37f54;
   margin:1.5% 1%;
   font-weight:bold;
   border-radius:30px;
-  @include transition-property(all);
-  @include transition-duration(.2s);
+  @include transition-property(border-radius);
+  @include transition-duration(.5s);
   @include transition-timing-function(bounce-in);
 }
 
