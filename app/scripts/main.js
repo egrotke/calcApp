@@ -18,6 +18,8 @@ var KeyPadView = Backbone.View.extend({
 	},
 	initialize: function() {
 		this.render();
+		_.bindAll(this, 'on_keypress');
+		$(document).bind('keypress', this.on_keypress);
 	},
 	render: function() {
 		keyPadTemplate = _.template($('#key-pad-template').html(), {
@@ -26,8 +28,19 @@ var KeyPadView = Backbone.View.extend({
 		this.$el.html(keyPadTemplate);
 		return this;
 	},
+	on_keypress: function(e) {
+		var stringPressed = String.fromCharCode(e.keyCode);
+		if (e.keyCode === 13) {
+			this.processInput('Enter');
+		} else {
+			this.processInput(stringPressed);
+		}
+	},
 	keyPadClick: function(e) {
 		var input = e.target.innerHTML.trim();
+		this.processInput(input);
+	},
+	processInput: function(input) {
 		if (jQuery.isNumeric(input) || input == '.') {
 			if (input == '.') {
 				this.handleDecimal(input);
@@ -38,11 +51,11 @@ var KeyPadView = Backbone.View.extend({
 				this.currentNum = Number(this.currentNum);
 			}
 			this.displayNum(this.currentNum);
-		} else if (input == '+' || input == '−' || input == '×' || input == '÷') {
+		} else if (input == '+' || input == '−' || input == '-' || input == '×' || input == '*' || input == '÷' || input == '/') {
 			this.doOperation(input);
 		} else if (input == '±') {
 			this.switchSign();
-		} else if (input == 'Enter') {
+		} else if (input == 'Enter' || input == 13) {
 			this.enterNum();
 		} else if (input == 'C') {
 			this.clearStack();
@@ -76,22 +89,27 @@ var KeyPadView = Backbone.View.extend({
 				this.result = operand2 + operand1;
 				break;
 			case '−':
+			case '-':
 				this.result = operand2 - operand1;
 				break;
 			case '×':
+			case '*':
 				this.result = operand2 * operand1;
 				break;
 			case '÷':
+			case '/':
+				if (operand1 === 0){ 
+					break;
+					return;
+				}
 				this.result = operand2 / operand1;
 				break;
 		}
 		this.stack.push(this.result);
 		this.displayNum(this.result);
 		this.currentNum = 0;
-		this.drawStack('operator');
 	},
 	switchSign: function() {
-		console.log('+/- pressed');
 		if (this.currentNum != 0) {
 			this.currentNum *= -1;
 			this.displayNum(this.currentNum);
@@ -105,7 +123,6 @@ var KeyPadView = Backbone.View.extend({
 		this.stack = [];
 		this.currentNum = 0;
 		this.displayNum(this.currentNum);
-		this.drawStack('clear');
 	},
 	clearEntry: function() {
 		this.currentNum = 0;
@@ -116,7 +133,6 @@ var KeyPadView = Backbone.View.extend({
 			this.stack.push(this.currentNum);
 			this.currentNum = 0;
 		}
-		this.drawStack('enter');
 	},
 	displayNum: function(num) {
 		var maxDigits = 8;
@@ -125,14 +141,6 @@ var KeyPadView = Backbone.View.extend({
 		} else {
 			$('#readout').html(num);
 		}
-		
-	},
-	drawStack: function(action) {
-		console.log(this.stack);
-		$('#stack').empty();
-		this.stack.forEach(function(entry, index) {
-			$('#stack').append('<h3 class="stack-item">' + entry + '</h3>');
-		});
 
 	},
 	getLength: function(number) {

@@ -39,16 +39,7 @@ $lightOrange: #f37f54;
   @include box-shadow(#444 2px 2px 2px);
 
 }
-#stack{
-  display:none;
-  margin:20px auto 20px auto;
-  padding:4% 2%;
-  text-align:center;
-}
-.stack-item{
-  margin:2px 50%;
-  font-size: 3em;
-}
+
 #readout{
   text-align:right;
   overflow:hidden;
