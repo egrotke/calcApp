@@ -37,7 +37,7 @@ var KeyPadView = Backbone.View.extend({
 				this.currentNum += input;
 				this.currentNum = Number(this.currentNum);
 			}
-			$('#readout').html(this.currentNum);
+			this.displayNum(this.currentNum);
 		} else if (input == '+' || input == '−' || input == '×' || input == '÷') {
 			this.doOperation(input);
 		} else if (input == '±') {
@@ -50,12 +50,10 @@ var KeyPadView = Backbone.View.extend({
 			this.clearEntry();
 		}
 	},
-	handleDecimal: function(dot){
-		
+	handleDecimal: function(dot) {
 		numString = String(this.currentNum);
-		console.log('HD' + numString.indexOf('.'));
-		if(numString.indexOf('.') == -1){
-			if (this.currentNum == 0){
+		if (numString.indexOf('.') == -1) {
+			if (this.currentNum == 0) {
 				this.currentNum = '0.';
 			} else {
 				this.currentNum += '.';
@@ -88,7 +86,7 @@ var KeyPadView = Backbone.View.extend({
 				break;
 		}
 		this.stack.push(this.result);
-		$('#readout').html(this.result);
+		this.displayNum(this.result);
 		this.currentNum = 0;
 		this.drawStack('operator');
 	},
@@ -96,22 +94,22 @@ var KeyPadView = Backbone.View.extend({
 		console.log('+/- pressed');
 		if (this.currentNum != 0) {
 			this.currentNum *= -1;
-			$('#readout').html(this.currentNum);
+			this.displayNum(this.currentNum);
 		} else {
 			this.stack[this.stack.length - 1] *= -1;
-			$('#readout').html(this.stack[this.stack.length - 1]);
+			this.displayNum(this.stack[this.stack.length - 1]);
 		}
 
 	},
 	clearStack: function() {
 		this.stack = [];
 		this.currentNum = 0;
-		$('#readout').html(this.currentNum);
+		this.displayNum(this.currentNum);
 		this.drawStack('clear');
 	},
 	clearEntry: function() {
 		this.currentNum = 0;
-		$('#readout').html(this.currentNum);
+		this.displayNum(this.currentNum);
 	},
 	enterNum: function() {
 		if (this.currentNum != 0) {
@@ -120,14 +118,25 @@ var KeyPadView = Backbone.View.extend({
 		}
 		this.drawStack('enter');
 	},
+	displayNum: function(num) {
+		var maxDigits = 8;
+		if (this.getLength(num) > maxDigits) {
+			$('#readout').html(num.toExponential(maxDigits));
+		} else {
+			$('#readout').html(num);
+		}
+		
+	},
 	drawStack: function(action) {
 		console.log(this.stack);
 		$('#stack').empty();
 		this.stack.forEach(function(entry, index) {
-    		console.log(entry);
-    		$('#stack').append('<h3 class="stack-item">' + entry + '</h3>');
+			$('#stack').append('<h3 class="stack-item">' + entry + '</h3>');
 		});
-		
+
+	},
+	getLength: function(number) {
+		return number.toString().length;
 	}
 });
 
@@ -181,13 +190,13 @@ var keyPads = new KeyPadCollection([{
 function buttonHandlers() {
 
 	$('#modern-theme').click(function() {
-		$("body").removeClass( "retro metal" ).addClass('modern');
+		$("body").removeClass("retro metal").addClass('modern');
 	});
 	$('#retro-theme').click(function() {
-		$("body").removeClass( "modern metal" ).addClass('retro');
+		$("body").removeClass("modern metal").addClass('retro');
 	});
 	$('#metal-theme').click(function() {
-		$("body").removeClass( "modern retro" ).addClass('metal');
+		$("body").removeClass("modern retro").addClass('metal');
 	});
 	var d = new Date();
 	var thisYear = d.getFullYear();

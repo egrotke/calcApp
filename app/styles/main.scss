@@ -70,7 +70,15 @@ $lightOrange: #f37f54;
   margin:1.5% 1%;
   font-weight:bold;
   border-radius:30px;
+  @include transition-property(all);
+  @include transition-duration(.2s);
+  @include transition-timing-function(bounce-in);
 }
+
+/*.btn.keyPad:hover{
+  @include box-shadow(grey 0px 0px 0px);
+}*/
+
 .btn.keyPad:active, .btn.keyPad:focus{
   outline:0;
 }
@@ -117,7 +125,10 @@ body {
     padding-bottom: 10px;
   }
 }
-
+.theme-nav .btn{
+  font-weight:300;
+  font-size: Helvetica;
+}
 /* Custom page footer */
 .footer {
   padding-top: 19px;
